@@ -12,23 +12,28 @@
       <script src="../IST.356-Project1//uikit-3.23.0/js/uikit-icons.min.js"></script>
       <!-- Navigation -->
       <nav class="uk-navbar-container uk-padding-small" uk-navbar uk-sticky>
-         <div class="uk-navbar-left uk-margin-left">
-            <ul class="uk-navbar-nav">
-               <li class="uk-active"><a href="#" uk-icon="icon: home; ratio: 1.2"></a></li>
-               <li><a href="#featured" uk-scroll>Featured</a></li>
-               <li><a href="#plan" uk-scroll>plan</a></li>
-               <li><a href="#Countdown" uk-scroll>Countdown</a></li>
-            </ul>
-         </div>
-         <div class="uk-navbar-right uk-margin-right">
-            <div class="uk-navbar-item uk-padding-small">
-               <form class="uk-search uk-search-navbar">
-                  <span uk-search-icon></span>
-                  <input class="uk-search-input uk-form-width-medium" type="search" placeholder="Search restaurants...">
-               </form>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle" href="#" uk-navbar-toggle-icon></a>
+            <div class="uk-navbar-dropdown" uk-drop="mode: click; boundary: !nav">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="#" uk-icon="home"></a></li>
+                    <li><a href="#featured" uk-scroll>Featured</a></li>
+                    <li><a href="#plan" uk-scroll>Plan</a></li>
+                    <li><a href="#Countdown" uk-scroll>Countdown</a></li>
+                </ul>
             </div>
-         </div>
-      </nav>
+        </div>
+        <div class="uk-navbar-right">
+            <div class="uk-navbar-item">
+                <form class="uk-search uk-search-navbar">
+                    <span uk-search-icon></span>
+                    <input class="uk-search-input uk-form-width-medium uk-width-1-1@s" 
+                         type="search" 
+                         placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </nav>
       <!-- Main Section -->
       <div class="uk-height-large uk-background-cover uk-light uk-flex uk-flex-center uk-flex-middle" 
          data-src="../IST.356-Project1/images/campus.jpg" uk-img uk-parallax="bgy: -200">
@@ -429,31 +434,32 @@
 
       <!-- Footer -->
       <footer class="uk-section uk-section-secondary uk-padding-large">
-         <div class="uk-container">
-            <div class="uk-flex uk-flex-center">
-               <div class="uk-margin-medium-right">
-                  <h4 class="uk-heading-bullet">Contact Us</h4>
-                  <ul class="uk-list">
-                     <li><span uk-icon="mail"></span> contact@campuseats.com</li>
-                     <li><span uk-icon="receiver"></span> +1 (234) 123-4567</li>
-                  </ul>
-               </div>
-               <div class="uk-margin-medium-left">
-                  <h4 class="uk-heading-bullet">Follow Us</h4>
-                  <div class="uk-margin-top">
-                     <a href="https://www.tiktok.com/explore" class="uk-icon-button uk-margin-small-right" uk-icon="tiktok"></a>
-                     <a href="https://www.x.com" class="uk-icon-button uk-margin-small-right" uk-icon="x"></a>
-                     <a href="https://www.instagram.com" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-                     <a href="https://www.facebook.com" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
-                     <a href="https://www.youtube.com" class="uk-icon-button" uk-icon="youtube"></a>
-                  </div>
-               </div>
-            </div>
-            <div class="uk-margin-top uk-text-center">
-               <p class="uk-text-small">&copy; 2025 Campus Eats Explorer. All rights reserved.</p>
-            </div>
-         </div>
-      </footer>
+        <div class="uk-container">
+           <div class="uk-flex uk-flex-center">
+              <div class="uk-margin-medium-right">
+                 <h4 class="uk-heading-bullet">Contact Us</h4>
+                 <ul class="uk-list">
+                    <li><span uk-icon="mail"></span> contact@campuseats.com</li>
+                    <li><span uk-icon="receiver"></span> +1 (234) 123-4567</li>
+                 </ul>
+              </div>
+              <div class="uk-margin-medium-left">
+                 <h4 class="uk-heading-bullet">Follow Us</h4>
+                 <div class="uk-margin-top">
+                    <a href="https://www.tiktok.com/explore" class="uk-icon-button uk-margin-small-right" uk-icon="tiktok"></a>
+                    <a href="https://www.x.com" class="uk-icon-button uk-margin-small-right" uk-icon="x"></a>
+                    <a href="https://www.instagram.com" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                    <a href="https://www.facebook.com" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                    <a href="https://www.youtube.com" class="uk-icon-button" uk-icon="youtube"></a>
+                 </div>
+              </div>
+           </div>
+           <div class="uk-margin-top uk-text-center">
+              <p class="uk-text-small">&copy; 2025 Campus Eats Explorer. All rights reserved.</p>
+           </div>
+        </div>
+     </footer>
+
       <!-- Back to Top -->
       <div class="uk-position-fixed uk-position-bottom-right uk-position-medium">
          <a href="#" class="uk-icon-button uk-box-shadow-medium" uk-icon="arrow-up" uk-scroll></a>
