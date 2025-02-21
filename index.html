@@ -16,7 +16,8 @@
             <ul class="uk-navbar-nav">
                <li class="uk-active"><a href="#" uk-icon="icon: home; ratio: 1.2"></a></li>
                <li><a href="#featured" uk-scroll>Featured</a></li>
-               <li><a href="#gallery" uk-scroll>Gallery</a></li>
+               <li><a href="#plan" uk-scroll>3 dyas plan</a></li>
+               <li><a href="#Countdown" uk-scroll>Countdown</a></li>
             </ul>
          </div>
          <div class="uk-navbar-right uk-margin-right">
@@ -106,7 +107,7 @@
                                <span uk-icon="clock"></span> Panda Express:
                             </div>
                             <div class="uk-width-expand">
-                               11:00 AM - 6:00 PM
+                               11:00 AM-6:00 PM
                             </div>
                          </div>
                         <p>With the most options of any eatery on campus, Schine is packed with food and entertainment.</p>
@@ -386,21 +387,42 @@
                 </div>
             </div>
         </div>
-
-        <!-- Plan Controls -->
-        <div class="uk-margin-top uk-text-center">
-            <button class="uk-button uk-button-primary uk-margin-small-right" 
-                    uk-tooltip="Add new meal">
-                <span uk-icon="plus"></span> Add Meal
-            </button>
-            <button class="uk-button uk-button-default" 
-                    uk-tooltip="Reset plan">
-                <span uk-icon="refresh"></span> Reset
-            </button>
-        </div>
     </div>
 </section>
-      
+
+<section id="Countdown" class="uk-section">
+    <div class="uk-container">
+        <h2 class="uk-heading-line uk-text-center">
+            <span>Spring Break Countdown</span>
+        </h2>
+
+        <div class="uk-flex uk-flex-center"> 
+            <div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown date="2025-03-08T00:00:00">
+                <div>
+                    <div class="uk-countdown-number uk-countdown-days"></div>
+                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+                </div>
+                <div class="uk-countdown-separator">:</div>
+                <div>
+                    <div class="uk-countdown-number uk-countdown-hours"></div>
+                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+                </div>
+                <div class="uk-countdown-separator">:</div>
+                <div>
+                    <div class="uk-countdown-number uk-countdown-minutes"></div>
+                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+                </div>
+                <div class="uk-countdown-separator">:</div>
+                <div>
+                    <div class="uk-countdown-number uk-countdown-seconds"></div>
+                    <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+                </div>
+            </div>
+        </div> 
+
+    </div>
+</section>
+
       <!-- Footer -->
       <footer class="uk-section uk-section-secondary uk-padding-large">
          <div class="uk-container">
